@@ -76,16 +76,16 @@ export default function PdfToWord() {
             />
           </label>
 
-          <span className="text-gray-500">or drop PDF here</span>
+          {/* <span className="text-gray-500">or drop PDF here</span> */}
 
           {/* URL Input */}
-          <input
+          {/* <input
             type="text"
             value={fileUrl}
             onChange={(e) => setFileUrl(e.target.value)}
             placeholder="Or enter PDF file URL"
             className="border border-gray-300 p-3 w-80 rounded-lg focus:ring focus:ring-blue-300"
-          />
+          /> */}
 
           {/* Convert Button */}
           <button
