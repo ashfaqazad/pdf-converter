@@ -42,16 +42,29 @@ export default function WordToPdf() {
     }
   };
 
-  const handleDownload = () => {
-    if (downloadUrl) {
+
+
+  const handleDownload = async () => {
+  if (downloadUrl) {
+    try {
+      const response = await fetch(downloadUrl);
+      const blob = await response.blob();
+      const url = window.URL.createObjectURL(blob);
       const a = document.createElement("a");
-      a.href = downloadUrl;
-      a.download = file.name.replace(/\.[^.]+$/, ".pdf");  // .docx se .pdf bana
+      a.href = url;
+      a.download = file.name.replace(/\.[^.]+$/, ".pdf");
       document.body.appendChild(a);
       a.click();
       a.remove();
+      window.URL.revokeObjectURL(url);
+    } catch (err) {
+      console.error("Download error:", err);
+      alert("Failed to download file");
     }
-  };
+  }
+};
+
+
 
   return (
     <main className="min-h-screen flex flex-col items-center justify-center bg-gray-50 p-6">
