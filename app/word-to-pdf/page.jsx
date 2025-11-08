@@ -20,7 +20,7 @@ export default function WordToPdf() {
       const formData = new FormData();
       formData.append("file", file);
 
-      const res = await fetch("http://72.60.78.58:4000/convert/word-to-pdf", {
+      const res = await fetch("https://72.60.78.58:4000/convert/word-to-pdf", {
         method: "POST",
         body: formData,
       });
