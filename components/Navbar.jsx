@@ -21,8 +21,11 @@ const pages = [
   { name: "PDF to Word", path: "/pdf-to-word" },
   { name: "Word to PDF", path: "/word-to-pdf" },
     { name: "Image to PDF", path: "/image-to-pdf" },
-  // { name: "Merge PDF", path: "/merge-pdf" },
-  // { name: "Compress PDF", path: "/compress-pdf" },
+  { name: "Merge PDF", path: "/merge-pdf" },
+    { name: "Split PDF", path: "/split-pdf" },
+  { name: "Compress PDF", path: "/compress-pdf" },
+  { name: "Excel PDF", path: "/excel-pdf" },
+
   { name: "Blog", path: "/blog" },
   { name: "About", path: "/about" },
   { name: "Contact", path: "/contact" },
@@ -68,7 +71,7 @@ export default function Navbar() {
                   textTransform: "none",
                   padding: "6px 12px",
                   fontFamily: "unset",
-                  fontSize: "18px",
+                  fontSize: "14px",
                 }}
               >
                 <span className="nav-item-span">{page.name}</span>

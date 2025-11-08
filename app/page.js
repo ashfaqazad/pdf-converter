@@ -8,11 +8,12 @@ export default function Home() {
 
   const tools = [
     { title: "PDF to Word", desc: "Convert PDF files to editable Word documents.", link: "/pdf-to-word", icon: <FileType className="w-10 h-10 text-red-600 mx-auto mb-4" /> },
-    // { title: "Merge PDF", desc: "Combine multiple PDF files into one.", link: "/merge-pdf", icon: <FileArchive className="w-10 h-10 text-red-600 mx-auto mb-4" /> },
-    // { title: "Split PDF", desc: "Separate PDF pages into different files.", link: "/split-pdf", icon: <Split className="w-10 h-10 text-red-600 mx-auto mb-4" /> },
-    // { title: "Compress PDF", desc: "Reduce PDF file size without losing quality.", link: "/compress-pdf", icon: <FileText className="w-10 h-10 text-red-600 mx-auto mb-4" /> },
+    { title: "Merge PDF", desc: "Combine multiple PDF files into one.", link: "/merge-pdf", icon: <FileArchive className="w-10 h-10 text-red-600 mx-auto mb-4" /> },
+    { title: "Split PDF", desc: "Separate PDF pages into different files.", link: "/split-pdf", icon: <Split className="w-10 h-10 text-red-600 mx-auto mb-4" /> },
+    { title: "Compress PDF", desc: "Reduce PDF file size without losing quality.", link: "/compress-pdf", icon: <FileText className="w-10 h-10 text-red-600 mx-auto mb-4" /> },
     { title: "Word to PDF", desc: "Convert Word documents to PDF easily.", link: "/word-to-pdf", icon: <FileSpreadsheet className="w-10 h-10 text-blue-600 mx-auto mb-4" /> },
     { title: "Image to PDF", desc: "Turn your images into a single PDF file.", link: "/image-to-pdf", icon: <FileImage className="w-10 h-10 text-green-600 mx-auto mb-4" /> },
+    { title: "Excel to PDF", desc: "Convert Excel files to PDF with high quality.", link: "/excel-to-pdf", icon: <FileImage className="w-10 h-10 text-blue-600 mx-auto mb-4" /> },
   ];
 
   return (
