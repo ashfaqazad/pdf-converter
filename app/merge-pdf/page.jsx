@@ -25,7 +25,7 @@ export default function MergePDF() {
     setDownloadUrl("");
 
     try {
-      const res = await fetch("http://72.60.78.58:4000/convert/merge-pdf", {
+      const res = await fetch("/api/convert/merge-pdf", {
         method: "POST",
         body: formData,
       });
@@ -38,7 +38,7 @@ export default function MergePDF() {
       const data = await res.json();
 
       if (data.success) {
-        setDownloadUrl(`http://72.60.78.58:4000${data.download}`);
+        setDownloadUrl(`/api${data.download}`);
       } else {
         alert("Merge failed: " + data.error);
         console.error("API Error:", data);

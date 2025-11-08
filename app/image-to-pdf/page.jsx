@@ -22,7 +22,7 @@ export default function ImageToPdf() {
         formData.append("images", file);  // Backend array ke liye
       });
 
-      const res = await fetch("http://72.60.78.58:4000/convert/image-to-pdf", {
+      const res = await fetch("/api/convert/image-to-pdf", {
         method: "POST",
         body: formData,
       });
@@ -31,7 +31,7 @@ export default function ImageToPdf() {
 
       if (data.success) {
         // ✅ Use full download link from VPS
-        setDownloadUrl(`http://72.60.78.58:4000${data.download}`);
+        setDownloadUrl(`/api${data.download}`);
       } else {
         alert("Conversion failed: " + data.error);
         console.error("API Error:", data);

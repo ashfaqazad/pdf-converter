@@ -26,7 +26,7 @@ export default function PdfToWord() {
       }
 
       // ✅ Replace with your VPS API route
-      const res = await fetch("http://72.60.78.58:4000/convert/pdf-to-word", {
+      const res = await fetch("/api/convert/pdf-to-word", {
         method: "POST",
         body: formData,
       });
@@ -35,7 +35,7 @@ export default function PdfToWord() {
 
       if (data.success) {
         // ✅ Use full download link from VPS
-        setDownloadUrl(`http://72.60.78.58:4000${data.download}`);
+        setDownloadUrl(`/api${data.download}`);
       } else {
         alert("Conversion failed: " + data.error);
         console.error("API Error:", data);

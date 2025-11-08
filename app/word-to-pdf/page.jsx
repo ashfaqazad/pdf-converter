@@ -20,7 +20,7 @@ export default function WordToPdf() {
       const formData = new FormData();
       formData.append("file", file);
 
-      const res = await fetch("https://72.60.78.58:4000/convert/word-to-pdf", {
+      const res = await fetch("/api/convert/word-to-pdf", {
         method: "POST",
         body: formData,
       });
@@ -29,7 +29,7 @@ export default function WordToPdf() {
 
       if (data.success) {
         // ✅ Use full download link from VPS
-        setDownloadUrl(`http://72.60.78.58:4000${data.download}`);
+        setDownloadUrl(`/api${data.download}`);
       } else {
         alert("Conversion failed: " + data.error);
         console.error("API Error:", data);
