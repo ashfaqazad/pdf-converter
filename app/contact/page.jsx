@@ -29,7 +29,7 @@ export default function Contact() {
               <label className="block text-gray-700 font-medium mb-1">Email</label>
               <input
                 type="email"
-                placeholder="@pdflinx.com"
+                placeholder="you@example.com"
                 className="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
               />
             </div>
@@ -58,13 +58,13 @@ export default function Contact() {
           </p>
           <ul className="space-y-3 text-gray-700">
             <li>
-              <span className="font-medium">📧 Email:</span> support@psdtools.com
+              <span className="font-medium">📧 Email:</span> @pdflinx.com
             </li>
             <li>
               <span className="font-medium">📍 Address:</span> Karachi, Pakistan
             </li>
             <li>
-              <span className="font-medium">☎ Phone:</span> +92 300 1234567
+              <span className="font-medium">☎ Phone:</span> +92 3332758958
             </li>
           </ul>
         </div>
