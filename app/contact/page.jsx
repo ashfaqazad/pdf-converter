@@ -110,7 +110,7 @@ export default function Contact() {
           </p>
           <ul className="space-y-3 text-gray-700">
             <li>
-              <span className="font-medium">📧 Email:</span> yourname@pdflinx.com
+              <span className="font-medium">📧 Email:</span> ashfaqahmed@pdflinx.com
             </li>
             <li>
               <span className="font-medium">📍 Address:</span> Karachi, Pakistan
